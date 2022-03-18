@@ -1,19 +1,21 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Grid from '@mui/material/CardContent';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton,
+  Card,
+  CardActions,
+  CardContent,
+  Grid,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from '@mui/material';
+
+import { MenuIcon, ExpandMoreIcon } from '@mui/icons-material';
 
 export default function ButtonAppBar() {
   return (
@@ -59,14 +61,13 @@ export default function ButtonAppBar() {
       </Card>
 
       <Grid container spacing={2}>
-        <Grid item >
-        <Button variant="contained">Log In</Button>
+        <Grid item>
+          <Button variant="contained">Log In</Button>
         </Grid>
         <Grid item>
           <Button variant="contained">Log Out</Button>
         </Grid>
       </Grid>
-
 
       <Accordion>
         <AccordionSummary
@@ -107,14 +108,6 @@ export default function ButtonAppBar() {
           <Typography>Disabled Accordion</Typography>
         </AccordionSummary>
       </Accordion>
-
-      
-
-
-
-
-
-
     </div>
   );
 }
